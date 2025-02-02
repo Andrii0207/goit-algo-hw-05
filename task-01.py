@@ -36,6 +36,8 @@ class HashTable:
         if self.table[key_hash] is not None:
             del self.table[key_hash]
             print("Delete successful")
+        else:
+            print(f"Key {key} is not correct")
 
 
 H = HashTable(5)
