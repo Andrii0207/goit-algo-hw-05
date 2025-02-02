@@ -21,10 +21,12 @@ def binary_search(arr, x):
         else:
             return (counter, arr[mid])
 
-    return (counter, arr[mid+1])
+    closest_min = arr[mid] if arr[mid] > x else arr[mid+1]
+
+    return (counter, closest_min)
 
 
-x = 1.23
+x = 1.2
 
 sorted_array = [
     0.12, 0.45, 0.78, 1.23, 1.56, 1.89, 2.34, 2.67, 3.01, 3.45,
